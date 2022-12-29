@@ -4,13 +4,13 @@ This program is used to imitate a simple network of routers.
 
 ## Assume we have 3 levels of routers
 
-Level 1: Dispatcher Router/
+Level 1: Dispatcher Router\
 All packets in the simulation will arrive at this router. The job of this router is to send off the queued packets to one of the available routers in the second level. 
 
-Level 2: Intermediate Hop Routers/
+Level 2: Intermediate Hop Routers\
 These routers will accept a packet from the dispatcher router. There will be a user-determined amount of these routers. Depending the size of the packet, it takes a variable amount of time to process the packet. Once the arrived packets have been processed, the router can send those packets to their destination.
 
-Level 3: Destination Router/
+Level 3: Destination Router\
 To simplify the simulation, we assume all packets have the same destination. The job of this router is to accept incoming packets after they have been sent from the second level. However, due to a limited bandwidth (bottleneck in the network), this router can only accept a limited amount of packets at a given moment.
 
 ## Background
